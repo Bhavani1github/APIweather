@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+       #div1{
+              border: 1px solid #9d0fc9;
+              padding: 10px;
+              height: 200px;
+              width: 300px;
+              margin-top: 50px;
+              margin-left:400px;
+              box-shadow: 10px 10px 13px #da3baa;
+
+           }
+        #div2{
+          
+
+        }
+    </style>
+</head>
+<body>
+    <h1 >Weather API</h1>
+    <div id="div1">
+        <div id="div2"> <form action="" method="post">
+            {% csrf_token %}
+            City <input type="text" name="city" id="">
+            <button type="submit" >Search</button><i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        </div>
+
+    </div>
+
+    {{name}} <br>
+    {{main}}     <br>
+    {{description}}   <br>
+    {{temp}}    <br> 
+    {{wind}}    <br>
+</body>
+</html>
